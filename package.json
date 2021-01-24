@@ -1,0 +1,55 @@
+{
+  "name": "nph-2",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "@sailshq/connect-redis": "^3.2.1",
+    "@sailshq/lodash": "^3.10.3",
+    "@sailshq/socket.io-redis": "^5.2.0",
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "grunt": "1.0.4",
+    "joi": "^17.3.0",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.11.9",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^6.4.16",
+    "react": "^17.0.1",
+    "sails": "^1.4.0",
+    "sails-hook-grunt": "^4.0.0",
+    "sails-hook-orm": "^2.1.1",
+    "sails-hook-sockets": "^2.0.0",
+    "sails-mongo": "^1.2.0",
+    "supertest": "^6.1.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "eslint": "5.16.0",
+    "nodemon": "^2.0.6",
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "server": "node app.js",
+    "dev": "nodemon app.js",
+    "start": "NODE_ENV=production node app.js",
+    "test": "jest --watch",
+    "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/munshad/nph-2.git"
+  },
+  "author": "munshad",
+  "license": "",
+  "engines": {
+    "node": "^12.17"
+  }
+}
